@@ -1,0 +1,72 @@
+{
+	"name": "ds_shipblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_shipblobcsv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Train.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Warehouse_block",
+				"type": "String"
+			},
+			{
+				"name": "Mode_of_Shipment",
+				"type": "String"
+			},
+			{
+				"name": "Customer_care_calls",
+				"type": "String"
+			},
+			{
+				"name": "Customer_rating",
+				"type": "String"
+			},
+			{
+				"name": "Cost_of_the_Product",
+				"type": "String"
+			},
+			{
+				"name": "Prior_purchases",
+				"type": "String"
+			},
+			{
+				"name": "Product_importance",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Discount_offered",
+				"type": "String"
+			},
+			{
+				"name": "Weight_in_gms",
+				"type": "String"
+			},
+			{
+				"name": "Reached.on.Time_Y.N",
+				"type": "String"
+			}
+		]
+	}
+}
